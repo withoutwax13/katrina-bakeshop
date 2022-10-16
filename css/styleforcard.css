@@ -43,7 +43,8 @@
 }
 .card .card-context h2 {
     position: absolute;
-    color: white
+    color: white;
+    margin-left: 50px;
 }
 
 .card .card-context p {
@@ -53,7 +54,6 @@
     color: white;
     line-height: 20px;
     word-spacing: -2px;
-    text-align: center;
     opacity: 0;
     transition: .2 ease-out;
     font-size: large;
