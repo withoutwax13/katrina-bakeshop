@@ -1,5 +1,5 @@
 const VARS = {
-    app_url: `http://github.com/withoutwax13/katrina-bakeshop/`, // TODO: switch this one to localhost if not the deployed version
+    app_url: `http://withoutwax13.github.io/katrina-bakeshop/`, // TODO: switch this one to localhost if not the deployed version
     api_url: `http://withoutwax13.github.io/katrina-bakeshop-react`,
     store: [
         {
