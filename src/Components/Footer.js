@@ -12,10 +12,10 @@ class Footer extends Component{
                         </div>
                         <div className="col-lg-3">
                             <h4>PAGES</h4>
-                            <p><a href={`${VARS.app_url}`} style={{textDecoration: 'none', color: 'black'}}>Home</a></p> 
-                            <p><a href={`${VARS.app_url}order`} style={{textDecoration: 'none', color: 'black'}}>Order</a></p>
-                            <p><a href={`${VARS.app_url}cart`} style={{textDecoration: 'none', color: 'black'}}>Cart</a></p>
-                            <p><a href={`${VARS.app_url}contact`} style={{textDecoration: 'none', color: 'black'}}>Contact</a></p>
+                            <p><a href={`/`} style={{textDecoration: 'none', color: 'black'}}>Home</a></p> 
+                            <p><a href={`/order`} style={{textDecoration: 'none', color: 'black'}}>Order</a></p>
+                            <p><a href={`/cart`} style={{textDecoration: 'none', color: 'black'}}>Cart</a></p>
+                            <p><a href={`/contact`} style={{textDecoration: 'none', color: 'black'}}>Contact</a></p>
                         </div>
                         <div className="col-lg-3">
                             <h4>CONTACT INFO</h4>

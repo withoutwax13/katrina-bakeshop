@@ -7,7 +7,7 @@ class Header extends Component{
         return (
             <nav className="navbar navbar-expand-lg fixed-top" style={{height: '64px', backgroundColor: 'white'}}>
                 <div className="container">
-                <a className="navbar-brand" href={`${VARS.app_url}`}>
+                <a className="navbar-brand" href='/'>
                     <img src={require('../assets/images/kb_logo.png')} alt="katrina-bakeshop-logo" className="img-responsive brand-img" style={{width: '50px', height:"50px"}}/>
                     <span id="brand-logo-label">Katrina's Bakeshop</span>
                 </a>
@@ -19,13 +19,13 @@ class Header extends Component{
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link nav-item-hover" style={{color:'black'}} href={`${VARS.app_url}order`}>Order</a>
+                        <a className="nav-link nav-item-hover" style={{color:'black'}} href={`/order`}>Order</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link nav-item-hover" style={{color:'black'}} href={`${VARS.app_url}contact`}>Contact</a>
+                        <a className="nav-link nav-item-hover" style={{color:'black'}} href={`/contact`}>Contact</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link nav-item-hover" style={{color:'black'}} href={`${VARS.app_url}order`}>Cart</a>
+                        <a className="nav-link nav-item-hover" style={{color:'black'}} href={`/order`}>Cart</a>
                     </li>
                     </ul>
                 </div>

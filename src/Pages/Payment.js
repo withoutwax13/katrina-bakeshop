@@ -95,7 +95,7 @@ class Payment extends Component{
                         <div className="col-lg-4"></div>
                         <div className="col-lg-4">
                             <div className="bt-btn pt-5 pb-3">
-                            <button type="submit" className="btn" style={{fontSize: 'xx-large', backgroundColor: 'hsl(210, 14%, 53%, 0.5)', border: 'none', width: '100%', textAlign: 'center'}}><a href={`${VARS.app_url}confirmation`} style={{color: 'black', textDecoration: 'none'}}>CHECK OUT</a></button>
+                            <button type="submit" className="btn" style={{fontSize: 'xx-large', backgroundColor: 'hsl(210, 14%, 53%, 0.5)', border: 'none', width: '100%', textAlign: 'center'}}><a href={`/confirmation`} style={{color: 'black', textDecoration: 'none'}}>CHECK OUT</a></button>
                             </div>
                         </div>
                         </div>
