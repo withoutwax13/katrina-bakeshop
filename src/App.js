@@ -23,12 +23,12 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="contact" element={<Contact/>}/>
-        <Route path="order" element={<Order/>}/>
-        <Route path="order/payment" element={<Payment/>}/>
-        <Route path="cart" element={<Cart/>}/>
-        <Route path="confirmation" element={<Confirmation/>}/>
+        <Route path="katrina-bakeshop" element={<Home/>}/>
+        <Route path="katrina-bakeshop/contact" element={<Contact/>}/>
+        <Route path="katrina-bakeshop/order" element={<Order/>}/>
+        <Route path="katrina-bakeshop/order/payment" element={<Payment/>}/>
+        <Route path="katrina-bakeshop/cart" element={<Cart/>}/>
+        <Route path="katrina-bakeshop/confirmation" element={<Confirmation/>}/>
       </Routes>
       <Footer/>
       

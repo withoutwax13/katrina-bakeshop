@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import VARS from '../Utility/VARS'
 
 class Hero extends Component{
@@ -23,7 +24,7 @@ class Hero extends Component{
                                     <p>
                                         We specialize in homemade cakes perfect for your special occasion. We also offer different bread and pastries that will surely satisfy your sweet cravings.
                                     </p>
-                                    <button className='py-2 px-4' onClick={()=>window.location.href = `/order`}>ORDER NOW</button>
+                                    <Link className='py-2 px-4' style={{textDecoration: 'none', fontColor: 'black'}} to={`order`}>ORDER NOW</Link>
                                 </div>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
                             </div>
@@ -38,7 +39,7 @@ class Hero extends Component{
                                     <p>
                                     According to the food historians, the ancient Egyptians were the first culture to show evidence of advanced baking skills. The Oxford English Dictionary traces the English word cake back to the 13th century. It is a derivation of 'kaka', an Old Norse word. Medieval European bakers often made fruitcakes and gingerbread.
                                     </p>
-                                    <button className='py-2 px-4' onClick={()=>window.location.href = `/order`}>ORDER NOW</button>
+                                    <Link className='py-2 px-4' style={{textDecoration: 'none', fontColor: 'black'}} to={`order`}>ORDER NOW</Link>
                                 </div>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
                             </div>
@@ -53,7 +54,7 @@ class Hero extends Component{
                                     <p>
                                     Originally made by the Egyptians, one of the earliest forms of pastry was made by combining flour and water into a paste which was then wrapped around meat to be baked. Pastries were later developed in the Middle East and would eventually be brought to Europe, gaining popularity in the medieval period.
                                     </p>
-                                    <button className='py-2 px-4' onClick={()=>window.location.href = `/order`}>ORDER NOW</button>
+                                    <Link className='py-2 px-4' style={{textDecoration: 'none', fontColor: 'black'}} to={`order`}>ORDER NOW</Link>
                                 </div>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
                             </div>
