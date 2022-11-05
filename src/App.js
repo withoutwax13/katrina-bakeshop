@@ -21,16 +21,44 @@ function App() {
  
   return (
     <>
-      <Header />
       <Routes>
-        <Route path="katrina-bakeshop" element={<Home/>}/>
-        <Route path="katrina-bakeshop/contact" element={<Contact/>}/>
-        <Route path="katrina-bakeshop/order" element={<Order/>}/>
+        <Route path="katrina-bakeshop" element={
+          <>
+            <Header/>
+            <Home/>
+            <Footer/>
+          </>
+        }/>
+        <Route path="katrina-bakeshop/contact" element={
+          <>
+            <Header/>
+            <Contact/>
+            <Footer/>
+          </>
+        }/>
+        <Route path="katrina-bakeshop/order" element={
+          <>
+            <Header/>
+            <Order/>
+            <Footer/>
+          </>
+        }/>
         <Route path="katrina-bakeshop/order/payment" element={<Payment/>}/>
-        <Route path="katrina-bakeshop/cart" element={<Cart/>}/>
-        <Route path="katrina-bakeshop/confirmation" element={<Confirmation/>}/>
+        <Route path="katrina-bakeshop/cart" element={
+          <>
+            <Header/>
+            <Cart/>
+            <Footer/>
+          </>
+        }/>
+        <Route path="katrina-bakeshop/confirmation" element={
+          <>
+            <Header/>
+            <Confirmation/>
+            <Footer/>
+          </>
+        }/>
       </Routes>
-      <Footer/>
       
     </>
   );

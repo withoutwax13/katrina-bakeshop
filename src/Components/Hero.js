@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import VARS from '../Utility/VARS'
+
 
 class Hero extends Component{
     getScreenHeight(){
@@ -19,12 +19,12 @@ class Hero extends Component{
                         <div className='container d-flex align-items-center justify-content-center' style={{height: `${this.getScreenHeight()}px`}}>
                             <div className='row'>
                                 <div className='col-lg-3 col-md-3 col-sm-2 text-center'></div>
-                                <div className='col-lg-6 col-md-6 col-sm-8 text-center py-3 px-4 text-center' style={{backgroundColor: 'white', boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px'}}>
+                                <div className='col-lg-6 col-md-6 col-sm-8 text-center py-3 px-4 text-center' style={{backgroundColor: '#CFCFC4', boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px'}}>
                                     <h1>Cavite's Best Bakeshop</h1>
                                     <p>
                                         We specialize in homemade cakes perfect for your special occasion. We also offer different bread and pastries that will surely satisfy your sweet cravings.
                                     </p>
-                                    <Link className='py-2 px-4' style={{textDecoration: 'none', fontColor: 'black'}} to={`order`}>ORDER NOW</Link>
+                                    <Link className='py-2 px-4' style={{textDecoration: 'none', color: 'white', backgroundColor: 'black'}} to={`order`}>ORDER NOW</Link>
                                 </div>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
                             </div>
@@ -34,12 +34,12 @@ class Hero extends Component{
                         <div className='container d-flex align-items-center justify-content-center' style={{height: `${this.getScreenHeight()}px`}}>
                             <div className='row'>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
-                                <div className='col-lg-6 col-md-6 col-sm-8 text-center py-3 px-4' style={{backgroundColor: 'white', boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px'}}>
+                                <div className='col-lg-6 col-md-6 col-sm-8 text-center py-3 px-4' style={{backgroundColor: '#CFCFC4', boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px'}}>
                                     <h1>Cavite's Cake Capital</h1>
                                     <p>
                                     According to the food historians, the ancient Egyptians were the first culture to show evidence of advanced baking skills. The Oxford English Dictionary traces the English word cake back to the 13th century. It is a derivation of 'kaka', an Old Norse word. Medieval European bakers often made fruitcakes and gingerbread.
                                     </p>
-                                    <Link className='py-2 px-4' style={{textDecoration: 'none', fontColor: 'black'}} to={`order`}>ORDER NOW</Link>
+                                    <Link className='py-2 px-4' style={{textDecoration: 'none', color: 'white', backgroundColor: 'black'}} to={`order`}>ORDER NOW</Link>
                                 </div>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
                             </div>
@@ -49,12 +49,12 @@ class Hero extends Component{
                         <div className='container d-flex align-items-center justify-content-center' style={{height: `${this.getScreenHeight()}px`}}>
                             <div className='row'>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
-                                <div className='col-lg-6 col-md-6 col-sm-8 text-center py-3 px-4' style={{backgroundColor: 'white', boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px'}}>
+                                <div className='col-lg-6 col-md-6 col-sm-8 text-center py-3 px-4' style={{backgroundColor: '#CFCFC4', boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px'}}>
                                     <h1>Superb Breads and Pastries</h1>
                                     <p>
                                     Originally made by the Egyptians, one of the earliest forms of pastry was made by combining flour and water into a paste which was then wrapped around meat to be baked. Pastries were later developed in the Middle East and would eventually be brought to Europe, gaining popularity in the medieval period.
                                     </p>
-                                    <Link className='py-2 px-4' style={{textDecoration: 'none', fontColor: 'black'}} to={`order`}>ORDER NOW</Link>
+                                    <Link className='py-2 px-4' style={{textDecoration: 'none', color: 'white', backgroundColor: 'black'}} to={`order`}>ORDER NOW</Link>
                                 </div>
                                 <div className='col-lg-3 col-md-3 col-sm-2'></div>
                             </div>

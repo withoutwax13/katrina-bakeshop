@@ -27,7 +27,6 @@ const ProductTabs = (props) => {
         })
     }
     const populate = () => {
-        console.log(cart)
         if(cart.length !== 0){
             return cart.map((item, itemID)=>{
                 if(item.count !== 0){
@@ -147,7 +146,7 @@ const ProductTabs = (props) => {
                                 </div>
                             </li>
                             </ul>
-                            <button className="btn shop-item-button float-end btn-purchase" style={{backgroundColor: 'hsl(210, 14%, 53%, 0.5)', marginRight: '20px'}}  type="submit"><Link style={{color: 'black', textDecoration: 'none'}} to={`payment`} state={{cart}}>Confirm Payment</Link></button>
+                            <button className="btn shop-item-button float-end btn-purchase" style={{backgroundColor: 'hsl(210, 14%, 53%, 0.5)', marginRight: '20px'}}  type="submit"><Link style={{color: 'black', textDecoration: 'none'}} to={`payment`} state={cart}>Confirm Payment</Link></button>
                         </div>
                         </div>
                     </div>

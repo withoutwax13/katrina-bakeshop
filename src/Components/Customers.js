@@ -14,11 +14,11 @@ class Customers extends Component{
         <div className='container text-center my-5 d-flex align-items-center justify-content-center' style={{height: `${this.getScreenHeight()}px`}}>
             <div className="row social-proof-component my-5 py-5">
                 <div className="subheading row mt-2 mb-4 text-center">
-                <h1 style={{color: 'black'}}>Our Customers</h1>
+                <h1 style={{color: 'black'}}>What Clients Say</h1>
                 </div>
                 <div id="carouselExampleControls" className="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
                 <div className="carousel-inner">
-                    <div className="carousel-item active py-4" style={{backgroundColor: 'white', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}}>
+                    <div className="carousel-item active py-4" style={{backgroundColor: '#CFCFC4', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}}>
                     <img className="rounded-circle shadow-1-strong mb-4 soc-avatar"
                         src={require("../assets/images/ai-gen-image-1.jpg")} alt="avatar" style={{width: '150px'}}/>
                     <div className="row d-flex justify-content-center">
@@ -42,7 +42,7 @@ class Customers extends Component{
                         <li><i className="far fa-star fa-sm"></i></li>
                     </ul>
                     </div>
-                    <div className="carousel-item py-4" style={{backgroundColor: 'white', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}}>
+                    <div className="carousel-item py-4" style={{backgroundColor: '#CFCFC4', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}}>
                     <img className="rounded-circle shadow-1-strong mb-4 soc-avatar"
                         src={require("../assets/images/ai-gen-image-2.jpg")} alt="avatar" style={{width: '150px'}}/>
                     <div className="row d-flex justify-content-center">
@@ -66,7 +66,7 @@ class Customers extends Component{
                         <li><i className="far fa-star fa-sm"></i></li>
                     </ul>
                     </div>
-                    <div className="carousel-item py-4" style={{backgroundColor: 'white', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}}>
+                    <div className="carousel-item py-4" style={{backgroundColor: '#CFCFC4', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset'}}>
                     <img className="rounded-circle shadow-1-strong mb-4 soc-avatar"
                         src={require("../assets/images/ai-gen-image-3.jpg")} alt="avatar" style={{width: '150px'}} />
                     <div className="row d-flex justify-content-center">
