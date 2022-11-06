@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -31,14 +32,14 @@ function Copyright() {
 
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
-function getStepContent(step, selectedData) {
+function getStepContent(step, selectedData, additionalAttrib) {
   switch (step) {
     case 0:
-      return <AddressForm />;
+      return <AddressForm handler={additionalAttrib}/>;
     case 1:
-      return <PaymentForm />;
+      return <PaymentForm handler={additionalAttrib}/>;
     case 2:
-      return <Review selectedData={selectedData}/>;
+      return <Review handler={additionalAttrib} selectedData={selectedData}/>;
     default:
       throw new Error('Unknown step');
   }
@@ -48,6 +49,18 @@ const theme = createTheme();
 
 export default function Checkout({selectedData}) {
   const [activeStep, setActiveStep] = React.useState(0);
+  const [addressInfo, setAddressInfo] = useState({})
+  const [paymentInfo, setPaymentInfo] = useState({})
+
+  var handleAddressInfo = (formdata) => {
+    setAddressInfo(formdata)
+  }
+
+  var handlePaymentInfo = (formdata) => {
+    setPaymentInfo(formdata)
+  }
+
+  var handler = [handleAddressInfo, handlePaymentInfo, {addressInfo: addressInfo, paymentInfo: paymentInfo}]
 
   const handleNext = () => {
     setActiveStep(activeStep + 1);
@@ -100,7 +113,7 @@ export default function Checkout({selectedData}) {
             </React.Fragment>
           ) : (
             <React.Fragment>
-              {getStepContent(activeStep, selectedData)}
+              {getStepContent(activeStep, selectedData, handler[activeStep])}
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 {activeStep !== 0 && (
                   <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>

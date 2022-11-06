@@ -44,24 +44,46 @@ export default function Review(props) {
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
             Shipping
           </Typography>
-          <Typography gutterBottom>John Smith</Typography>
-          <Typography gutterBottom>{addresses.join(', ')}</Typography>
+          <Typography gutterBottom>{`${props.handler.addressInfo.firstName} ${props.handler.addressInfo.lastName}`}</Typography>
+          <Typography gutterBottom>{`${props.handler.addressInfo.address1}, ${props.handler.addressInfo.address2}, ${props.handler.addressInfo.city}, ${props.handler.addressInfo.state}, ${props.handler.addressInfo.zip}, ${props.handler.addressInfo.country}`}</Typography>
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
             Payment details
           </Typography>
           <Grid container>
-            {payments.map((payment) => (
-              <React.Fragment key={payment.name}>
-                <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.name}</Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.detail}</Typography>
-                </Grid>
-              </React.Fragment>
-            ))}
+            <React.Fragment>
+              <Grid item xs={6}>
+                <Typography gutterBottom>Card Type</Typography>
+              </Grid>
+              <Grid item xs={6}>
+                <Typography gutterBottom>Visa</Typography>
+              </Grid>
+            </React.Fragment>
+            <React.Fragment>
+              <Grid item xs={6}>
+                <Typography gutterBottom>Card Name</Typography>
+              </Grid>
+              <Grid item xs={6}>
+                <Typography gutterBottom>{props.handler.paymentInfo.cardName}</Typography>
+              </Grid>
+            </React.Fragment>
+            <React.Fragment>
+              <Grid item xs={6}>
+                <Typography gutterBottom>Card Number</Typography>
+              </Grid>
+              <Grid item xs={6}>
+                <Typography gutterBottom>{props.handler.paymentInfo.cardNumber}</Typography>
+              </Grid>
+            </React.Fragment>
+            <React.Fragment>
+              <Grid item xs={6}>
+                <Typography gutterBottom>Expiry Date</Typography>
+              </Grid>
+              <Grid item xs={6}>
+                <Typography gutterBottom>{props.handler.paymentInfo.expDate}</Typography>
+              </Grid>
+            </React.Fragment>
           </Grid>
         </Grid>
       </Grid>
