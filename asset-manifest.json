@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/katrina-bakeshop/static/css/main.ef3ddac5.css",
-    "main.js": "/katrina-bakeshop/static/js/main.34c2611f.js",
+    "main.js": "/katrina-bakeshop/static/js/main.4e51d720.js",
     "static/js/787.88c9d54a.chunk.js": "/katrina-bakeshop/static/js/787.88c9d54a.chunk.js",
     "static/media/fhp2.png": "/katrina-bakeshop/static/media/fhp2.82e23bad865c23a3a030.png",
     "static/media/fhp1.png": "/katrina-bakeshop/static/media/fhp1.33c754e113066b3de7b0.png",
@@ -43,11 +43,11 @@
     "static/media/left-solid.svg": "/katrina-bakeshop/static/media/left-solid.a09e96c7cc72c4778f8e.svg",
     "static/media/circle-solid.svg": "/katrina-bakeshop/static/media/circle-solid.f283c400ad5fb3837b27.svg",
     "main.ef3ddac5.css.map": "/katrina-bakeshop/static/css/main.ef3ddac5.css.map",
-    "main.34c2611f.js.map": "/katrina-bakeshop/static/js/main.34c2611f.js.map",
+    "main.4e51d720.js.map": "/katrina-bakeshop/static/js/main.4e51d720.js.map",
     "787.88c9d54a.chunk.js.map": "/katrina-bakeshop/static/js/787.88c9d54a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef3ddac5.css",
-    "static/js/main.34c2611f.js"
+    "static/js/main.4e51d720.js"
   ]
 }
