@@ -1,12 +1,21 @@
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs'
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+// import Tab from 'react-bootstrap/Tab';
+// import Tabs from 'react-bootstrap/Tabs'
 import BreadPastriesTab from './BreadPastriesTab';
 import CakeTab from './CakeTab';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import VARS from '../Utility/VARS';
+
+import { Tab, Tabs, Box } from '@mui/material';
+
 const ProductTabs = (props) => {
     var [cart, setCart] = useState([])
+    const [value, setValue] = React.useState(0);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
     const addToCart = (newItem) => {
         if(cart.filter(item=>item.data.id === newItem.data.id).length !== 0){
             let items = [...cart]
@@ -55,20 +64,48 @@ const ProductTabs = (props) => {
         }
         return total
     }
+
+    function TabPanel(props) {
+        const { children, value, index, ...other } = props;
+      
+        return (
+          <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+          >
+            {value === index && (
+              <Box sx={{ p: 3 }}>
+                <Typography>{children}</Typography>
+              </Box>
+            )}
+          </div>
+        );
+      }
+      
+      function a11yProps(index) {
+        return {
+          id: `simple-tab-${index}`,
+          'aria-controls': `simple-tabpanel-${index}`,
+        };
+      }
     return (
         <>
-            <Tabs
-            defaultActiveKey="cake"
-            id="products-tab"
-            className="mb-3"
-            >
-                <Tab eventKey="cake" title="CAKE">
-                    <CakeTab addToCart={addToCart}/>
-                </Tab>
-                <Tab eventKey="breadpastries" title="BREAD AND PASTRIES">
-                    <BreadPastriesTab addToCart={addToCart}/>
-                </Tab>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <Tabs value={value} onChange={handleChange} aria-label="product tabs">
+                <Tab label="Cakes" {...a11yProps(0)} />
+                <Tab label="Bread & Pastries" {...a11yProps(1)} />
             </Tabs>
+            </Box>
+            <TabPanel value={value} index={0}>
+                <CakeTab addToCart={addToCart}/>
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+                <BreadPastriesTab addToCart={addToCart}/>
+            </TabPanel>
+            
             <section className="h-100 gradient-custom" id='cart'>
                 <div className="container py-5">
                     <div className="row d-flex justify-content-center my-4">
@@ -88,30 +125,7 @@ const ProductTabs = (props) => {
                             </div>
                             {populate()}
                         </div>
-                        {/* <div className="cart-row">
-                            <span className="cart-item cart-header cart-column" style={{marginLeft: '30px'}}>ITEM</span>
-                            <span className="cart-price cart-header cart-column">PRICE</span>
-                            <span className="cart-quantity cart-header cart-column">QUANTITY</span>
-                        </div>
-                        <div className="card-body">
-                            <div className="row">
-                            <div className="col-lg-12 col-md-6 mb-4 mb-lg-0">
-                                
-                                <div className="cart-items">
-                                    <div className="cart-row">
-                                        <div className="cart-item cart-column">
-                                            <span className="cart-item-title">Free Baking Book</span>
-                                        </div>
-                                        <span className="cart-price cart-column">₱0.00</span>
-                                        <div className="cart-quantity cart-column">
-                                            <input className="cart-quantity-input" type="number" value="1" disabled/>
-                                            <button className="btn btn-danger" type="button">REMOVE</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div> */}
+
                         </div>
                         <div className="card mb-4 mb-lg-0">
                         <div className="card-body text-center">
